@@ -59,8 +59,12 @@ local default = {
 
 local playerData = LuckyDataStore.CreateData(player_instance,key,default)
 
--- Function will create a table and return it if there wasn't an existing table with
--- given player and key, if there is will return nil.
+-- This function will create a table and return it with given player and key
+-- and must be used only once with the same key, otherwise there will be 2 tables
+-- with given key and that can cause data loss and problems on saving.
+
+-- To retrieve the data you created with this function, use FindData().
+
 --[[
     Data = {}, -- If there was a save returns that, if not returns default table.
     Player = player_instance,
