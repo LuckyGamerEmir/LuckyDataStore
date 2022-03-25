@@ -109,6 +109,4 @@ local tools_table = data.Tools
 
 - Editing players variables will automatically update table. However editing table will not change variables value.
 
-#
-
 ***This module is still work in progress, bugs may occur. If you encounter any bugs or errors please let me know. This is not the final result and everything is up to change.***
