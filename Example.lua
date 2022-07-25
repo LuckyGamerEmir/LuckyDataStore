@@ -4,7 +4,7 @@ local default = {
 	Money = 100,
 	Experience = 0,
 	Rank = "None",
-        Tools = {}, -- Tables should not be used on the combine function as they are not a variable.
+    Tools = {}, -- Tables should not be used on the combine function as they are not a variable.
 }
 
 game.Players.PlayerAdded:Connect(function(player)
